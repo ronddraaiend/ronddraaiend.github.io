@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Zukertort Amstelveen Jeugd</title>
+    <link type="text/css" rel="stylesheet" href="zukav.css" />
+    <script type="text/javascript" src="startpage.js"></script>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <meta name="author" content="Suman">
+    <meta name="description" content="Home page">
+    <meta name="keywords" content="zukertort Amstelveen Jeugd Home page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF - 8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+
+
+    <!--meta charset="utf-8"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <!-- CSS library -->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="index.CSS" media="screen">
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  
+
+
+    <style>
+          body {
+              position: relative;
+          }
+
+
+          
+
+         #column-wrap {
+            overflow: hidden; 
+          }
+
+          .title{
+            height: 100px;
+            color: #6585e7;
+            background-color: #FFFFFF;
+            border:1px solid #0000b3;
+            border-radius:.50rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .title>a:link{
+            color:inherit;
+           }
+
+          #boxContents{
+            background-color: #6585e7;
+
+          }
+
+
+
+          .equalHeightColumns{
+              margin-bottom: -99999px;
+              padding-bottom: 99999px;
+              
+            
+              border:1px solid #FFFFFF;
+              /*border-radius:10px;*/
+
+          }
+
+          .main-right-col {
+              
+              margin-bottom: -99999px;
+              padding-bottom: 99999px;
+          }
+
+          .carousel{
+            background: #0000b3;
+            padding: 10px;
+          }
+
+          .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 100%;
+                margin: auto;
+                height: 100%;
+                object-fit: contain;
+            }
+
+
+            .carousal-caption{
+              position: relative;
+              left: auto;
+              right: auto;
+            }
+
+             @media (min-width: 1200px) {
+              .carousel{
+                margin-left: 25%;
+                
+                max-width: 50%;
+                max-height: 50%;
+              }
+
+            }
+
+            /* Portrait tablets and small desktops */
+            @media (min-width: 768px) and (max-width: 991px) {
+              .carousel{
+                margin-left: 30%;
+                max-width: 300px;
+                max-height: 250px;
+              }
+            }
+            /*laptops*/
+            @media (min-width: 1024px) and (max-width: 1366px) {
+              .carousel{
+                margin-left: 25%;
+                /*max-width: 300px;
+                max-height: 250px;*/
+                max-width: 50%;
+                max-height: 50%;
+
+              }
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+              .carousel{
+                margin-left: 35%;
+                max-width: 300px;
+                max-height: 250px;
+              }
+
+            }
+            @media only screen and (max-width: 767px) {
+              .carousel{
+                margin-left: 0%;
+              }
+            }
+
+            ul nav navbar-nav{
+              width: 100%;
+            }
+
+            nav navbar-nav.li{
+              display: inline-block;
+            }
+
+            
+             #goToTopBtn {
+              display: none; 
+              height: 50px;
+              width: 50px;  
+              position: fixed; 
+              bottom: 20px; 
+              right: 30px; 
+              z-index: 99;
+              border: none; 
+              outline: none; 
+              color: blue; 
+              cursor: pointer;
+              border-radius: 50px;
+
+              
+            }
+
+            @media only screen and (min-width: 990px) {
+              .carousel-caption >  a:hover{
+                  font-size: 2em;
+                  
+              }
+            }
+
+            /*for IE browsers*/
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 992px) and (max-width: 1199px) {
+               .carousel{
+                margin-left: 37.5%;
+                max-width: 300px;
+                max-height: 250px;
+              }
+            }
+
+            @media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 767px) {
+              .carousel{
+                margin-left: 0%;
+              }
+            }
+
+            @media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 768px) and (max-width: 991px){
+               .carousel{
+                margin-left: 32%;
+                max-width: 300px;
+                max-height: 250px;
+              }
+            }
+
+
+            #overZukertort{
+                color: #6585e7;
+            }
+    </style>
+    <style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+    <script>
+    //small screens only
+      if (screen && screen.width > 480) {
+
+        window.onscroll = function() {showGoToTopBtn()};
+
+        function showGoToTopBtn() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                document.getElementById("goToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("goToTopBtn").style.display = "none";
+            }
+        }
+
+        
+        function goToTop() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+
+      }
+      </script>
+
+
+
+</head>
+<body> 
+
+
+
+
+<div   id="navigationBar"> <!--navigation Bar-->
+  
+    <script >$("#navigationBar").load("navBar.html");</script>
+
+</div>
+
+
+
+
+<div class="container-fluid ">
+
+<button onclick="goToTop()" id="goToTopBtn" title="Ga naar boven"><span style="padding-right: 0px;padding-left: 0px;"  class="glyphicon glyphicon-chevron-up"></span></button>
+
+<br>
+<h3 style="text-align:center; color:#000066;">Laatste berichten </h3>
+<br>
+
+<div id="nieuwsImageCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#nieuwsImageCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#nieuwsImageCarousel" data-slide-to="1"></li>
+      <li data-target="#nieuwsImageCarousel" data-slide-to="2"></li>
+      <li data-target="#nieuwsImageCarousel" data-slide-to="3"></li>
+      <li data-target="#nieuwsImageCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" >
+
+<div class="item active">
+   
+
+	  <!--               ========================== updating nieuws images ======================================= -->
+        <img class="img-responsive center-block" src="Nieuws images/20220416Anika.jpeg" alt="Anika Nederlands Meisjeskampioen E!" style="width:auto; height:250px;background-color:#FFF;" >
+
+    <div class="carousel-caption">
+        <!--               ========================== image caption ======================================= -->
+            <a href="nieuws.html#nieuws20220416" style="color: #FFFF00;" >Anika Nederlands Meisjeskampioen E!</a>
+          </div>
+      </div>
+
+    
+<div class="item">
+   
+
+	  <!--               ========================== updating nieuws images ======================================= -->
+        <img class="img-responsive center-block" src="Nieuws images/20220626GPGroepABC.jpg" alt="Zukertort Grandprix, 26 Juni 2022" style="width:auto; height:250px;background-color:#FFF;" >
+
+    <div class="carousel-caption">
+        <!--               ========================== image caption ======================================= -->
+            <a href="nieuws.html#nieuws20220626" style="color: #FFFF00;" >Zukertort Grandprix, 26 Juni 2022</a>
+          </div>
+      </div>
+
+ 
+
+<div class="item">  
+
+	  <!--               ========================== updating nieuws images ======================================= -->
+        <img class="img-responsive center-block" src="Nieuws images/20211212JCCC.jpeg" alt="Zukertort C1 tweede van Nederland" style="width:auto; height:250px;background-color:#FFF;" >
+
+    <div class="carousel-caption">
+        <!--               ========================== image caption ======================================= -->
+            <a href="nieuws.html#nieuws20211212" style="color: #FFFF00;" >Zukertort C1 tweede van Nederland</a>
+          </div>
+      </div>
+
+
+
+<div class="item">
+    
+	  <!--               ========================== updating nieuws images ======================================= -->
+        <img class="img-responsive center-block" src="Nieuws images/20220615TKE.jpeg" alt="Brons voor Zukertort E1" style="width:auto; height:250px;background-color:#FFF;" >
+
+    <div class="carousel-caption">
+        <!--               ========================== image caption ======================================= -->
+            <a href="nieuws.html#nieuws20220615" style="color: #FFFF00;" >Brons voor Zukertort E1</a>
+          </div>
+      </div>
+
+    	
+
+<div class="item">
+
+   
+      
+<!--               ========================== updating nieuws images ======================================= -->
+          <img class="img-responsive center-block" src="Nieuws images/20220617TweedeplaatsC3.jpeg" alt="Zukertortteams in de prijzen in de externe competitie" style="width:auto; height:250px;background-color:#FFF;" >
+
+          <div class="carousel-caption" >
+        <!--               ========================== image caption ======================================= -->
+            <a style="color:#FFFF00;" href="nieuws.html#nieuws20220617">Zukertortteams in de prijzen in de externe competitie</a>
+          </div>
+      </div>
+      
+    </div>
+
+
+
+
+    
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#nieuwsImageCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#nieuwsImageCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+<br>
+
+
+<div class="row">
+
+<div id="column-wrap"> 
+
+<!-- left column -->
+<div id="boxContents" class="col-xs-12 col-sm-4 equalHeightColumns"  >
+
+  <div class="boxColumns" >
+  <h1 class="title" id="overZukertort" >Over Zukertort Amstelveen</h1>
+        
+                <p>Zukertort Amstelveen is een van de bekendste schaakverenigingen uit de omgeving van Amsterdam.
+                   De clubavond is de vrijdagavond. Er wordt gespeeld in De Meent in Amstelveen-Zuid. Met meer dan 100 leden is het een van de grootste verenigingen van de
+                   <a href="http://www.sgaschaken.nl/" target="_blank" style="color:yellow;" >Schaakbond Groot-Amsterdam.</a>
+                   De jeugdafdeling is bijzonder groot: tientallen kinderen komen elke vrijdagavond schaken. Er is veel
+                   aandacht voor training. De jeugdafdeling heeft dan ook bijzonder veel kampioenen voortgebracht en ook 
+                   de diverse jeugdteams vallen regelmatig in de prijzen. Welke activiteit op welke avond plaatsvindt
+                   valt snel af te lezen op de <a href="jaarkalender.html" target="_blank" style="color:yellow;">Jaarkalender.</a>
+                  Zie onder &lsquo;<b>Contact</b>&rsquo; op deze website hoe jeugdleden lid kunnen worden.
+
+                 
+
+                De senioren afdeling van Zukertort Amstelveen behoort ook tot de sterkste verenigingen van Nederland.
+                Het eerste team speelde tientallen jaren in de nationale Meesterklasse van de 
+                <a href="http://www.schaakbond.nl/" target="_blank" style="color:yellow;">KNSB</a> en speelt nu in de 
+                1e klasse. Momenteel spelen er vijf teams van Zukertort Amstelveen in de landelijke en regionale competities.
+                Zie de website voor de <a href="http://zukertortamstelveen.nl/" target="_blank" style="color:yellow;">senioren</a>
+                voor meer informatie.</p>
+
+        
+  </div><!--end of boxcolumns-->
+</div><!-- /left column -->
+
+
+<!-- mid column -->
+<div id="boxContents" class="col-xs-12 col-sm-4 equalHeightColumns"  >
+
+  <div class="boxColumns" >
+ <h1 class="title" ><a href="geschiedenis.html" target="_blank" >Geschiedenis</a></h1>
+        <p> Het is niet eenvoudig de geschiedenis van een schaakvereniging die al meer dan 100 jaar oud is op een enkele pagina samen te vatten.
+ Daarom volgen hieronder in vogelvlucht de meest gedenkwaardige gebeurtenissen rond de S.V. Zukertort Amstelveen.<p><br>
+<h4>Oprichting</h4>
+<p>De schaakvereniging Zukertort werd opgericht op 18 december 1884. De naam werd ontleend aan grootmeester Jan Herman Zukertort.
+ De vereniging startte als klein clubje onder leiding van de heren F. v.d. Berg en W. Fermie in de (schaak)caf&eacute;'s 'Het Dorstige Hert' en 'Het Wapen van Nieuwer Amstel'.
+ Het natuurtalent v.d. Berg werd in die jaren vele malen clubkampioen en speelde bijna al zijn partijen met een voorgift om toch een enigszins spannende competitie te verkrijgen. <a href="geschiedenis.html" style="color:#ffff00;">Lees meer</a></p>
+  </div><!--end of boxcolumns-->
+</div><!-- /mid column -->
+
+<!-- right column -->
+<div id="boxContents" class="col-xs-12 col-sm-4 equalHeightColumns"  >
+  <div class="boxColumns" >
+  <h1 class="title" ><a href="http://polishheritage.co.uk/index.php?option=com_content&view=article&id=289:polish-history-jan-herman-zukertort&catid=58:jan-herman-zukertort-&Itemid=288" target="_blank" >Jan Herman Zukertort</a></h1>
+        <p>Zukertort was een grootmeester die leefde van 1842 tot 1888. Ondanks zijn speelsterkte en aansprekende toernooiresultaten is over hem toch minder bekend dan tijdgenoten als Steinitz, Blackburne en Andersen. Dat kwam wellicht door zijn vroege dood of doordat Steinitz hem belette de wereldtitel te behalen. Zijn meest aansprekende resultaten zijn de beroemde dameofferpartij tegen Blackburne en de toernooizege tijdens een zeer sterk bezet toernooi te Londen in 1883 (3 punten voor Steinitz). Een jaar later, in 1884, werd schaakvereniging Zukertort opgericht.</p>
+  <div>Meer informatie vindt u <a href="http://polishheritage.co.uk/index.php?option=com_content&view=article&id=289:polish-history-jan-herman-zukertort&catid=58:jan-herman-zukertort-&Itemid=288" target="_blank" style="color:yellow;">hier</a>
+             en <a href="https://nl.wikipedia.org/wiki/Johann_Zukertort" target="_blank" style="color:yellow;">hier</a>
+        </div>
+
+</div><!--end of boxcolumns-->
+</div><!-- /right column -->
+
+</div>
+</div>
+
+
+
+<br>
+
+
+
+
+
+ 
+
+</div>   <!--end of container fluid-->
+
+
+
+
+<div   id="footer"> <!--footer-->
+  
+  
+  <script >$("#footer").load("footer.html");</script>
+
+</div>
+</body>
+</html>
+
+
+
+
+
