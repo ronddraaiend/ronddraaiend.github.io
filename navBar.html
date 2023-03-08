@@ -8,7 +8,7 @@
 }
 
 
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width:1025px){
 
     #nav {
         display: table;
@@ -63,12 +63,21 @@
   <h1 class="websiteTitle">Zukertort Amstelveen Jeugd</h1>
   <nav class="navbar navbar-inverse" >
     
-
+    <div class="navbar-header">
+      <!--Menu collapses into button for mobile devices-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        
+    </div>
     <!--menu items-->
     <div class="collapse navbar-collapse" id="navBar">
         <ul id="nav" class="nav navbar-nav">
             
-            <li> <a href="index.html" >Home temp2</a></li>
+            <li> <a href="index.html" >Home</a></li>
 
             <li><a href="nieuws.html">Nieuws</a></li>
 
