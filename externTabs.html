@@ -1,0 +1,127 @@
+<div class="container-fluid ">
+<style>
+    
+   
+
+    .tab-pane{
+        background-color: #fff;
+    }
+
+    nav-tabs{
+      /*margin: 2px solid black;*/
+    }
+     #goToTopBtn {
+              display: none; 
+              height: 50px;
+              width: 50px;  
+              position: fixed; 
+              bottom: 20px; 
+              right: 30px; 
+              z-index: 99;
+              border: none; 
+              outline: none; 
+              color: blue; 
+              cursor: pointer;
+              border-radius: 50px;
+
+              
+            }
+</style>
+
+<script>
+    //small screens
+      if (screen && screen.width > 480) {
+
+        window.onscroll = function() {showGoToTopBtn()};
+
+        function showGoToTopBtn() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                document.getElementById("goToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("goToTopBtn").style.display = "none";
+            }
+        }
+
+        
+        function goToTop() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+
+      }
+      else{
+        //for larger screens
+        window.onscroll = function() {showGoToTopBtn()};
+
+        function showGoToTopBtn() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("goToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("goToTopBtn").style.display = "none";
+            }
+        }
+
+        
+        function goToTop() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+      }
+</script>
+
+
+ <h3 style="text-align: center;">Externe stand</h3>
+
+    <button onclick="goToTop()" id="goToTopBtn" title="Ga naar boven"><span style="padding-right: 0px;padding-left: 0px;"  class="glyphicon glyphicon-chevron-up"></span></button>
+
+ 
+
+     <div class="tabbable"> <!-- Only required for left/right tabs -->
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#1eKlasseC" data-toggle="tab"><b style="color: #000000;">1e klasse C</b></a></li>
+        <li><a href="#2eKlasseC" data-toggle="tab"><b>2e klasse C</b></a></li>
+        <li><a href="#3eKlasseC" data-toggle="tab"><b>3e klasse C</b></a></li>
+      </ul>
+
+      
+      <div class="tab-content">
+        <div  class="tab-pane fade in active" id="1eKlasseC">
+
+            
+                         
+                <div   id="EersteKlasseStanden"> <!--1e klasse C-->
+      
+                    <script >$("#EersteKlasseStanden").load("ExtStand1e.html");</script>
+
+                </div>
+            
+
+           
+  
+            
+            <a href="archive.html">Vorige standen</a> 
+        </div>
+        <div  class="tab-pane fade" id="2eKlasseC">
+
+          
+          <div   id="TweedeKlasseStanden"> <!--1e klasse C-->
+      
+                    <script >$("#TweedeKlasseStanden").load("ExtStand2e.html");</script>
+
+                </div>
+          <a href="archive.html">vorige standen</a> 
+        </div>
+        <div  class="tab-pane fade" id="3eKlasseC">
+
+          
+          <div   id="DerdeKlasseStanden"> <!--1e klasse C-->
+      
+                    <script >$("#DerdeKlasseStanden").load("ExtStand3e.html");</script>
+
+                </div>
+          <a href="archive.html">vorige standen</a> 
+        </div>
+      </div>
+    </div>
+    <p style="color:#000066;" ><i>Gegevens afkomstig van <a href="http://www.sgaschaken.nl/jeugd/teamcompetitie/" target="_blank">SGA.</a></i></p>
+</div>    
