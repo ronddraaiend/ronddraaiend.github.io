@@ -1,0 +1,80 @@
+#clubname   { white-space:nowrap; font-family:arial; font-size:36px; padding:8px 0 12px 0;
+              color:white; text-shadow:0 0 5px blue, 0 0 20px navy, 0 0 60px blue;  }
+.header     { font-family:arial; font-size:18px; color:#000080; font-weight:bold; white-space:nowrap; }
+.reglheader { font-family:verdana; font-size:18px; color:#000080; font-weight:bold; margin-left:2.5em}
+.tekst      { font-family:arial; font-size:16px; color:#000000; }
+.tekstalign { font-family:arial; font-size:16px; color:#000000; text-align:justify; }
+.pageheader { color:#cc0000; font-family:arial, serif; white-space:nowrap;
+              font-size:28px; text-align:center; line-height:140%; text-shadow:1px 1px 1px black; }
+.tableheader { font-size:18px; font-weight:bold; font-family:verdana,arial, times, sans;
+               color:#006600; background-color:#94e998; margin:0 0 -2px -8px; 
+               padding:0.25em 0.3em 0.25em 0.5em;}
+h3          { padding-bottom:0; }
+.nobreak    { white-space:nowrap; }
+.preformat  { font-family:monospace; white-space:pre; }
+table#players tr td { text-align:center; padding:3px 3px 1px 3px; }
+table#players  { margin:1.6em; }
+body { margin: 0 4px 0 8px}
+
+a.downloadpgn { width:24px; height:24px; display:inline-block; cursor:pointer; 
+                color:white; background-color:royalblue; border-radius:50%; 
+                font-family:tahoma; font-size:24px; text-decoration:none; font-weight:bold;
+                padding:0px 0px 6px 10px; float:left; margin:8px 8px 0px 0px;
+              }
+
+#menu {
+    margin:0.5em 0 0.5em 0;
+    list-style-type:none;
+    padding:0;
+    cursor:pointer;
+}
+#menu>li
+{
+    display:inline;
+    width:auto;
+    margin:1px 0px 1px 1px;
+    padding:4px 12px 4px 14px;
+    background-color:darkblue;
+    color:lightcyan;
+    font-family:Tahoma; 
+    border-radius: 5px 5px 0 0;
+    border:1px solid powderblue; 
+    font-size:18px;
+    letter-spacing:0.02em;
+    list-style:none;
+    text-align:center;
+}
+#menu > li:hover {
+    border-top-width:2px;
+    border-top-color:#7b97ea;
+}
+#menu>li>ul{
+    padding:0;
+    list-style-type:none; 
+    text-align:left;
+}
+#menu > li > ul > li {
+    display: block;
+    width: auto;
+    margin: 0px 1px 0px 1px;
+    padding: 4px 12px 4px 10px;
+    background-color: darkblue;
+    color: snow; 
+    white-space:nowrap;
+    border-top:1px solid darkblue;
+    font-family: Arial;
+    font-size: 15px;
+    list-style: none;
+    transition: all 0s;
+}
+#menu > li > ul > li:hover {
+    color:navy;
+    background-color:lightskyblue;
+}
+#menu > li > ul li:first-of-type {
+    padding-top:10px;
+    border-radius:7px 7px 0 0;
+}
+#menu > li > ul li:last-of-type {
+    border-radius:0 0 7px 7px;
+}
